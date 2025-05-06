@@ -18,7 +18,7 @@ File names are mandatory since that's how they show in correct language.
 ✅ Done
 
 Below Packe is for Typescript and Javascript Ofc
-- [x] [Just Typescript Snippets](https://github.com/k1eu/just-zed-snippets/just-ts-snippets)
+- [x] [Just Typescript Snippets](https://github.com/k1eu/just-zed-snippets/tree/main/just-ts-snippets)
 
 ⌛ Planned
 
