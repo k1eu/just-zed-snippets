@@ -1,0 +1,226 @@
+{
+  "consoleAssert": {
+    "prefix": "cas",
+    "body": ["console.assert(${1:first}, ${2:second})"],
+    "description": "If the specified expression is false, the message is written to the console along with a stack trace"
+  },
+  "consoleDir": {
+    "prefix": "cldi",
+    "body": ["console.dir(${1:first})"],
+    "description": "Prints a JavaScript representation of the specified object"
+  },
+  "consoleError": {
+    "prefix": "cler",
+    "body": ["console.error(${1:first})"],
+    "description": "Displays a message in the console and also includes a stack trace from where the method was called"
+  },
+  "consoleLog": {
+    "prefix": "clg",
+    "body": ["console.log(${1:first})"],
+    "description": "Displays a message in the console"
+  },
+  "consoleTrace": {
+    "prefix": "cltr",
+    "body": ["console.trace(${1:first})"],
+    "description": "Prints a stack trace from the point where the method was called"
+  },
+  "consoleLogObject": {
+    "prefix": "cln",
+    "body": ["console.log({${1:first}})"],
+    "description": "Logs property as object."
+  },
+  "consoleLogWithName": {
+    "prefix": "clo",
+    "body": ["console.log('${1:first}', ${1:first})"],
+    "description": "Logs property as object."
+  },
+  "consoleLogJson": {
+    "prefix": "clj",
+    "body": ["console.log('${1:first}', JSON.stringify(${1:first}, null, 2))"],
+    "description": "Logs stringified JSON property with name."
+  },
+  "consoleTime": {
+    "prefix": "cltm",
+    "body": ["console.time('${1:first}')"],
+    "description": "Console time wrapper"
+  },
+  "consoleTimeEnd": {
+    "prefix": "clte",
+    "body": ["console.timeEnd('${1:first}')"],
+    "description": "Console time end wrapper"
+  },
+  "consoleWarn": {
+    "prefix": "clwa",
+    "body": ["console.warn(${1:first})"],
+    "description": "Displays a message in the console but also displays a yellow warning icon along with the logged message"
+  },
+  "consoleInfo": {
+    "prefix": "clin",
+    "body": ["console.info(${1:first})"],
+    "description": "Displays a message in the console but also displays a blue information icon along with the logged message"
+  },
+  "consoleTable": {
+    "prefix": "cltl",
+    "body": ["console.table([${1:first}])"],
+    "description": "Logs table to console"
+  },
+  "importAs": {
+    "prefix": "ima",
+    "body": ["import { ${2:second} as ${3:third} } from '${1:first}'"]
+  },
+  "importDestructing": {
+    "prefix": "imn",
+    "body": ["import { ${2:second} } from '${1:first}'"]
+  },
+  "importEverything": {
+    "prefix": "ime",
+    "body": ["import * as ${2:second} from '${1:first}'"]
+  },
+  "import": {
+    "prefix": "imp",
+    "body": ["import ${2:second} from '${1:first}'"]
+  },
+  "describeBlock": {
+    "prefix": "desc",
+    "body": ["describe('${1:first}', () => { ${2:second} })"],
+    "description": "Testing `describe` block"
+  },
+  "itAsyncBlock": {
+    "prefix": "tita",
+    "body": ["it('should ${1:first}', async () => { ${2:second} })"],
+    "description": "Testing asynchronous `it` block"
+  },
+  "itBlock": {
+    "prefix": "tit",
+    "body": ["it('should ${1:first}', () => { ${2:second} })"],
+    "description": "Testing `it` block"
+  },
+  "testAsyncBlock": {
+    "prefix": "testa",
+    "body": ["test('should ${1:first}', async () => { ${2:second} })"],
+    "description": "Testing `asynchronous test` block"
+  },
+  "testBlock": {
+    "prefix": "test",
+    "body": ["test('should ${1:first}', () => { ${2:second} })"],
+    "description": "Testing `test` block"
+  },
+  "exportDefault": {
+    "prefix": "expd",
+    "body": ["export default ${1:first}"]
+  },
+  "exportDestructing": {
+    "prefix": "expn",
+    "body": ["export { ${2:second} } from '${1:first}'"]
+  },
+  "exportAs": {
+    "prefix": "expa",
+    "body": ["export { ${2:second} as ${3:third} } from '${1:first}'"]
+  },
+  "exportNamedArrowFunction": {
+    "prefix": "enaf",
+    "body": ["export const ${1:first} = (${2:second}) => {${3:third}}"],
+    "description": "Export named function"
+  },
+  "exportNamedFunction": {
+    "prefix": "ednf",
+    "body": ["export function ${1:first}(${2:second}) {${3:third}}"],
+    "description": "Export named function"
+  },
+  "exportDefaultNamedFunction": {
+    "prefix": "ednf",
+    "body": ["export default function ${1:first}(${2:second}) {${3:third}}"],
+    "description": "Export default named function"
+  },
+  "method": {
+    "prefix": "met",
+    "body": ["${1:first} = (${2:second}) => {${3:third}}"],
+    "description": "Creates a method inside a class"
+  },
+  "propertyGet": {
+    "prefix": "pge",
+    "body": ["get ${1:first}() {", "  return this.${2:second}", "}"],
+    "description": "Creates a getter property inside a class"
+  },
+  "propertySet": {
+    "prefix": "pse",
+    "body": ["set ${1:first}(${2:second}) {${3:third}}"],
+    "description": "Creates a setter property inside a class"
+  },
+  "forEach": {
+    "prefix": "fea",
+    "body": ["${1:first}.forEach(${2:second} => {${3:third}})"],
+    "description": "Creates a forEach statement"
+  },
+  "forOf": {
+    "prefix": "fof",
+    "body": ["for(let ${1:first} of ${2:second}) {${3:third}}"],
+    "description": "Iterating over property names of iterable objects"
+  },
+  "forIn": {
+    "prefix": "fin",
+    "body": ["for(let ${1:first} in ${2:second}) {${3:third}}"],
+    "description": "Iterating over property values of iterable objects"
+  },
+  "anonymousFunction": {
+    "prefix": "anfn",
+    "body": ["(${1:first}) => { ${2:second} }"],
+    "description": "Creates an anonymous function"
+  },
+  "namedFunction": {
+    "prefix": "nfn",
+    "body": ["function ${1:first}(${2:second}) {${3:third}}"],
+    "description": "Creates a named function"
+  },
+  "Log to console": {
+    "prefix": "log",
+    "body": ["console.info(\"Hello, ${1:World}!\")", "$0"],
+    "description": "Logs to console"
+  },
+  "namedArrowFunction": {
+    "prefix": "nafn",
+    "body": ["const ${1:first} = (${2:second}) => { ${3:third} }"],
+    "description": "Creates a named function"
+  },
+  "destructingObject": {
+    "prefix": "dob",
+    "body": ["const {${2:second}} = ${1:first}"],
+    "description": "Creates and assigns a local variable using object destructing"
+  },
+  "destructingArray": {
+    "prefix": "dar",
+    "body": ["const [${2:second}] = ${1:first}"],
+    "description": "Creates and assigns a local variable using array destructing"
+  },
+  "setInterval": {
+    "prefix": "sti",
+    "body": ["setInterval(() => { ${1:first} }, ${2:second})"],
+    "description": "Executes the given function at specified intervals"
+  },
+  "setTimeOut": {
+    "prefix": "sto",
+    "body": ["setTimeout(() => { ${1:first} }, ${2:second})"],
+    "description": "Executes the given function after the specified delay"
+  },
+  "promise": {
+    "prefix": "prom",
+    "body": ["new Promise((resolve, reject) => { ${1:first} })"],
+    "description": "Creates and returns a new Promise in the standard ES7 syntax"
+  },
+  "commentBigBlock": {
+    "prefix": "cmmb",
+    "body": ["/**", " * ${1:first}", " */"]
+  },
+  "typeofSnippet": {
+    "prefix": "tpf",
+    "body": ["typeof ${1:first}"]
+  },
+  "exportType": {
+    "prefix": "exptp",
+    "body": ["export type ${1:first} = {${2:second}}"]
+  },
+  "exportInterface": {
+    "prefix": "expint",
+    "body": ["export interface ${1:first} {${2:second}}"]
+  }
+}
